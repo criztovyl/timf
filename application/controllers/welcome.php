@@ -19,31 +19,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data['main']= "application/views/welcome_message.php";
-		$data['left'] = "application/views/pages/empty.html";
-		$data['right'] = "application/views/pages/empty.html";
-		$data['title'] = "Welcome :)";
-		$this->load->view("templates/header", $data);		
-		$this->load->view("templates/main", $data);
-		$this->load->view("templates/footer", $data);
-	}
-	public function start(){
-		$data['main']= "application/views/pages/start.php";
-		$data['left'] = "application/views/pages/empty.html";
-		$data['right'] = "application/views/pages/empty.html";
-		$data['title'] = "Timf";
-		$this->load->view("templates/header", $data);		
-		$this->load->view("templates/main", $data);
-		$this->load->view("templates/footer", $data);
-	}
-	public function register(){
-		$data['main']= "application/views/pages/register.php";
-		$data['left'] = "application/views/pages/empty.html";
-		$data['right'] = "application/views/pages/empty.html";
-		$data['title'] = "Timf";
-		$this->load->view("templates/header", $data);		
-		$this->load->view("templates/main", $data);
-		$this->load->view("templates/footer", $data);
+		$this->load->view('welcome_message');
 	}
 }
 
