@@ -14,7 +14,7 @@
 			echo "<p>".$extra."</p>\n";		
 		}
 		if($this->session->userdata('loggedin')) {
-			echo "Logged in:)";
+			echo "<p>Logged in:)<br><a href=\"".base_url('timf/view/profile')."\">Profil</a></p>";
 		}
 		else{
 			/*-------------------------------------------------------*/
@@ -27,7 +27,7 @@ echo <<< 'EOT'
 <input type="text" name="username"><br>
 <label for="password">Passwort</label><br>
 <input type="password" name="password"><br>
-<input type="submit">
+<input type="submit" value="Login">
 </form>
 <h3>Registrieren</h3>
 <p>Coming soon :)<br>

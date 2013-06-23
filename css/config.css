@@ -1,0 +1,16 @@
+.config.cols.drop{
+	width: 30%;
+}
+.config.cols.content{
+	width: 40%;
+}
+input{
+	margin: 2% 2%;
+}
+label{
+	line-height: 2;
+}
+#avatarUrlHint{
+	padding: 2% 2%;
+	margin: 2% 2%;
+}
